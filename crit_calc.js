@@ -17,9 +17,12 @@ var equipCrit = parseInt(document.getElementById("plus_crit").value,10);
 //parseInt(prompt("Your current +crit bonus?"),10);
 //Calculates critical chance
 var critChance = finalCrit();
-//Critchance cannot be worse than baseCrit-eqipCrit
+//Critchance cannot be worse than baseCrit-eqipCrit and lower than 1/2
 if (critChance > baseCrit-equipCrit){
     critChance = baseCrit-critChance;
+}
+if (critChance < 2){
+    critChance = 2
 }
 //Return result
 document.getElementById("result").value = critChance;
