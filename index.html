@@ -1,16 +1,17 @@
 <!DOCTYPE HTML>
 <HTML>
     <head>
-        <title>HaX critCalc</title>
+        <title>Dofus CritCalc</title>
         <script type="text/javascript" src="crit_calc.js"></script>
     </head>
         <body>
-            <h1>Critcalc</h1>
+            <h1>Dofus v1.29 Critical hit calculator</h1>
+            <h3>Instructions:</h3>
             <ol>
-                <li>Enter your total agility</li>
-                <li>Enter weapon or spell critchance</li>
-                <li>Enter your +critical chance bonus</li>
-                <li>???</li>
+                <li>Enter your total agility on character</li>
+                <li>Enter your +critical chance bonus from all sources</li>
+                <li>Enter weapon or spell critical hit base chance</li>
+                <li>Press "Calculate" button</li>
                 <li>Check the result</li>
             </ol>
             <div>
@@ -28,6 +29,7 @@
                      <input type="text" id="base_crit" placeholder="weapon crit chance" required>
                     </div>
                 <button type="button" class="btn btn-default" onclick="main()">Calculate</button>
+                <button type="button|reset">Reset</button>
                 </form>
             </div>
             <div>
