@@ -2,7 +2,7 @@
 function main(){
 //Total agility on character. It cannot be negative value
     var agility = parseInt(document.getElementById("agility_inp").value,10);
-    if(agility < 0 || agility === NaN){
+    if(agility < 0 ){
     agility = 0;
     }
 // Weapon or spell crit rate
