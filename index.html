@@ -20,26 +20,49 @@
                 <li>Check the result</li>
             </ol>
             <div>
-                <form>
-                    <div>
-                     <label for="agility_inp">Agility:</label>
-                     <input id="agility_inp" type="text" placeholder="total agility" required>
+                <form class="form-group">
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <label for="agility_inp">Agility:</label>
+                            <div class="input-group">
+                                <div class="input-group-addon"><img src="images/20px-Agility.png" alt="agy"></div>
+                                <input class="form-control" id="agility_inp" type="text" placeholder="Total agility" required>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                     <label for="plus_crit">+Crit bonus:</label>
-                     <input type="text" id="plus_crit" placeholder="total +crits" required>
+
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <label for="plus_crit">+Crit bonus:</label>
+                            <div class="input-group">
+                                <div class="input-group-addon"><img src="images/critical_hits.png" alt="agy"></div>
+                                <input class="form-control" type="text" id="plus_crit" placeholder="Total +crits" required>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                     <label for="base_crit">Crit chance:1/</label>
-                     <input type="text" id="base_crit" placeholder="weapon crit chance" required>
+
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <label for="base_crit">Crit chance:</label>
+                            <div class="input-group">
+                                <div class="input-group-addon">1 /</div>
+                                <input class="form-control" type="text" id="base_crit" placeholder="Wep or spell crit chance" required>
+                            </div>
+                        </div>
                     </div>
-                <button type="button" class="btn btn-default" onclick="main()">Calculate</button>
-                <button type="button|reset">Reset</button>
-                </form>
+
+            <div class="form-inline">
+                <div class="form-group">
+                    <label for="result">Result:</label>
+                    <div class="input-group">
+                        <div class="input-group-addon">1 /</div>
+                        <input class="form-control" type="text" id="result" readonly>
+                    </div>
+                </div>
             </div>
-            <div>
-                <label for="result">Result:1/</label>
-                <input type="text" id="result" readonly>
+            <button type="button" class="btn btn-primary" onclick="main()">Calculate</button>
+            <button type="reset" class="btn btn-warning">Reset</button>
             </div>
+         </form>
         </body>
 </HTML>
