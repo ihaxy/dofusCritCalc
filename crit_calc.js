@@ -2,10 +2,13 @@
 function main(){
 //Total agility on character. It cannot be negative value
     var agility = parseInt(document.getElementById("agility_inp").value,10);
+<<<<<<< HEAD
     if(agility < 0){
     agility = 0;
     }
     if (Number.isNaN(agility) == true){
+=======
+>>>>>>> 32dab88e6ec220e5f4f40633a64d3ebcb45fef74
     if(agility < 0 ){
     agility = 0;
     }
