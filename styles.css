@@ -1,9 +1,13 @@
 input, label, button {
-  width : 200px;
+  width : 170px;
   margin: 0;
-  padding-left: 50px; 
+  padding-left: 20px; 
 
   -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
      -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
           box-sizing: border-box;
+}
+
+#result {
+  background-color: #d4d6bc
 }

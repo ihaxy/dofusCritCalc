@@ -10,6 +10,8 @@
         <script type="text/javascript" src="crit_calc.js"></script>
     </head>
         <body>
+            <div class="container">
+            <div class="jumbotron">
             <h1>Dofus v1.29 Critical hit calculator</h1>
             <h3>Instructions:</h3>
             <ol>
@@ -26,7 +28,7 @@
                             <label for="agility_inp">Agility:</label>
                             <div class="input-group">
                                 <div class="input-group-addon"><img src="images/20px-Agility.png" alt="agy"></div>
-                                <input class="form-control" id="agility_inp" type="text" placeholder="Total agility" required>
+                                <input class="form-control" onkeypress="return isNumber(event)" id="agility_inp" type="text" placeholder="Total agility">
                             </div>
                         </div>
                     </div>
@@ -36,7 +38,7 @@
                             <label for="plus_crit">+Crit bonus:</label>
                             <div class="input-group">
                                 <div class="input-group-addon"><img src="images/critical_hits.png" alt="agy"></div>
-                                <input class="form-control" type="text" id="plus_crit" placeholder="Total +crits" required>
+                                <input class="form-control" onkeypress="return isValidNumber(event)" type="text" id="plus_crit" placeholder="Total +CH bonus">
                             </div>
                         </div>
                     </div>
@@ -46,7 +48,7 @@
                             <label for="base_crit">Crit chance:</label>
                             <div class="input-group">
                                 <div class="input-group-addon">1 /</div>
-                                <input class="form-control" type="text" id="base_crit" placeholder="Wep or spell crit chance" required>
+                                <input class="form-control" onkeypress="return isValidNumber(event)" type="text" id="base_crit" placeholder="Wep or spell crit chance">
                             </div>
                         </div>
                     </div>
@@ -62,6 +64,8 @@
             </div>
             <button type="button" class="btn btn-primary" onclick="main()">Calculate</button>
             <button type="reset" class="btn btn-warning">Reset</button>
+            </div>
+            </div>
             </div>
          </form>
         </body>
