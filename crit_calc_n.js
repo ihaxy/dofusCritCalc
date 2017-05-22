@@ -6,7 +6,6 @@ function main(){
     agility = 0;
     }
     if (Number.isNaN(agility) == true){
-    if(agility < 0 ){
     agility = 0;
     }
 // Weapon or spell crit rate
