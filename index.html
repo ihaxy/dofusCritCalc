@@ -11,62 +11,59 @@
     </head>
         <body>
             <div class="container">
-            <div class="jumbotron">
-            <h1>Dofus v1.29 Critical hit calculator</h1>
-            <h3>Instructions:</h3>
-            <ol>
-                <li>Enter your total agility on character</li>
-                <li>Enter your +critical chance bonus from all sources</li>
-                <li>Enter weapon or spell critical hit base chance</li>
-                <li>Press "Calculate" button</li>
-                <li>Check the result</li>
-            </ol>
-            <div>
-                <form class="form-group">
-                    <div class="form-inline">
-                        <div class="form-group">
-                            <label for="agility_inp">Agility:</label>
-                            <div class="input-group">
-                                <div class="input-group-addon"><img src="images/20px-Agility.png" alt="agy"></div>
-                                <input class="form-control" onkeypress="return isNumber(event)" id="agility_inp" type="text" placeholder="Total agility">
+                <div class="jumbotron">
+                    <h1>Dofus v1.29 Critical hit calculator</h1>
+                    <h3>Instructions:</h3>
+                    <ol>
+                        <li>Enter your total agility on character</li>
+                        <li>Enter your +critical chance bonus from all sources</li>
+                        <li>Enter weapon or spell critical hit base chance</li>
+                        <li>Press "Calculate" button</li>
+                        <li>Check the result</li>
+                    </ol>
+                <div>
+                    <form class="form-group">
+                        <div class="form-inline">
+                            <div class="form-group">
+                                <label for="agility_inp">Agility:</label>
+                                <div class="input-group">
+                                    <div class="input-group-addon"><img src="images/20px-Agility.png" alt="agy"></div>
+                                        <input class="form-control" onkeypress="return isNumber(event)" id="agility_inp" type="text" placeholder="Total agility">
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="form-inline">
-                        <div class="form-group">
-                            <label for="plus_crit">+Crit bonus:</label>
-                            <div class="input-group">
-                                <div class="input-group-addon"><img src="images/critical_hits.png" alt="agy"></div>
-                                <input class="form-control" onkeypress="return isValidNumber(event)" type="text" id="plus_crit" placeholder="Total +CH bonus">
+                            <div class="form-inline">
+                                <div class="form-group">
+                                    <label for="plus_crit">+Crit bonus:</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><img src="images/critical_hits.png" alt="agy"></div>
+                                        <input class="form-control" onkeypress="return isValidNumber(event)" type="text" id="plus_crit" placeholder="Total +CH bonus">
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="form-inline">
-                        <div class="form-group">
-                            <label for="base_crit">Crit chance:</label>
-                            <div class="input-group">
-                                <div class="input-group-addon">1 /</div>
-                                <input class="form-control" onkeypress="return isValidNumber(event)" type="text" id="base_crit" placeholder="Wep or spell crit chance">
+                            <div class="form-inline">
+                                <div class="form-group">
+                                    <label for="base_crit">Crit chance:</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon">1 /</div>
+                                        <input class="form-control" onkeypress="return isValidNumber(event)" type="text" id="base_crit" placeholder="Wep or spell crit chance">
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-
-            <div class="form-inline">
-                <div class="form-group">
-                    <label for="result">Result:</label>
-                    <div class="input-group">
-                        <div class="input-group-addon">1 /</div>
-                        <input class="form-control" type="text" id="result" readonly>
-                    </div>
+                            <div class="form-inline">
+                                <div class="form-group">
+                                    <label for="result">Result:</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon">1 /</div>
+                                        <input class="form-control" type="text" id="result" readonly>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary" onclick="main()">Calculate</button>
+                            <button type="reset" class="btn btn-warning">Reset</button>
+                    </form>
+                </div>
                 </div>
             </div>
-            <button type="button" class="btn btn-primary" onclick="main()">Calculate</button>
-            <button type="reset" class="btn btn-warning">Reset</button>
-            </div>
-            </div>
-            </div>
-         </form>
         </body>
 </HTML>
